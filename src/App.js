@@ -31,7 +31,7 @@ function App() {
     fetchImages()
   }, [])
 
-  useEffect(() => {
+  useEffect(() => { 
     const event = window.addEventListener('scroll', () => { 
       if((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 
