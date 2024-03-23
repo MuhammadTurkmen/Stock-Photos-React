@@ -18,6 +18,7 @@ function App() {
       const response = await fetch(url)
       const data = await response.json()
     } catch (error) {
+      setLoading(false)
       console.log(error);
     }
   }
