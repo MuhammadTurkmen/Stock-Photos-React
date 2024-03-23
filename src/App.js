@@ -36,6 +36,7 @@ function App() {
     <div className="search">
       <form className="search-form">
         <input type="text" placeholder='search' className='form-input'/>
+        <button type='submit'></button>
       </form>
     </div>
   </main>
