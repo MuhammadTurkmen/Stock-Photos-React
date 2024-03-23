@@ -35,7 +35,7 @@ function App() {
   return <main>
     <div className="search">
       <form className="search-form">
-        <input type="text" placeholder='search'/>
+        <input type="text" placeholder='search' className='form-input'/>
       </form>
     </div>
   </main>
