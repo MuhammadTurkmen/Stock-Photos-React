@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const event = window.addEventListener('scroll', () => {
+    const event = window.addEventListener('scroll', () => { 
       console.log(`innerHeight ${window.innerHeight}`);
       console.log(`scrolly ${window.screenY}`);
       console.log(`body height ${document.body.scrollHeight}`);
