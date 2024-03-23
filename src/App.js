@@ -47,8 +47,8 @@ function App() {
     </section>
     <section className='photos'>
       <div className="photos-center">
-        {photos.map(() => {
-          return <Photo />
+        {photos.map((image, index) => {
+          return <Photo key={index}/>
         })}
       </div>
     </section>
