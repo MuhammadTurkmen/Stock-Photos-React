@@ -46,7 +46,7 @@ function App() {
       </form>
     </section>
     <section className='photos'>
-      
+      .photos-center
     </section>
   </main>
 }
