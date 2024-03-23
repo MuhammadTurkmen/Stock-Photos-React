@@ -37,7 +37,7 @@ function App() {
 
       }
     }) 
- 
+  
     return () =>  window.removeEventListener('scroll', event)
   }, []) 
   
