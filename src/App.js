@@ -37,14 +37,14 @@ function App() {
   }
 
   return <main>
-    <div className="search">
+    <section className="search">
       <form className="search-form">
         <input type="text" placeholder='search' className='form-input'/>
         <button type='submit' className='submit-btn' onClick={handleSubmit}>
           <FaSearch />
         </button>
       </form>
-    </div>
+    </section>
   </main>
 }
 
