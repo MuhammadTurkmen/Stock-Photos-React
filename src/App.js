@@ -32,7 +32,7 @@ function App() {
   }, [])
   
   
-  return <h2>stock photos starter</h2>
+  return <main>stock photos starter</main>
 }
 
 export default App
