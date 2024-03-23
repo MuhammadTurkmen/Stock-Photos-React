@@ -8,6 +8,7 @@ const Photo = ({urls:{regular}, alt_description, likes, user:{name, portfolio_ur
         <h4>{name}</h4>
         <p>{likes} likes</p>
       </div>
+      <a href={portfolio_url}></a>
     </div>
   </article>
 }
