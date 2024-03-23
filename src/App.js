@@ -22,6 +22,11 @@ function App() {
       console.log(error);
     }
   }
+
+  useEffect(() => {
+    
+  })
+  
   
   return <h2>stock photos starter</h2>
 }
