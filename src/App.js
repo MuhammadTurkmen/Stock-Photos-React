@@ -24,8 +24,8 @@ function App() {
   }
 
   useEffect(() => {
-    
-  })
+    fetchImages()
+  }, [])
   
   
   return <h2>stock photos starter</h2>
