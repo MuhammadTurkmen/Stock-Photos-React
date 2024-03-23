@@ -32,7 +32,11 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const event = window.addEventListener('scroll', () => {})
+    const event = window.addEventListener('scroll', () => {
+      console.log(`innerHeight ${window.innerHeight}`);
+    })
+
+    return () =>  window.removeEventListener('scroll', event)
   }, [])
   
   const handleSubmit = (e) => {
