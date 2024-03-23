@@ -31,7 +31,10 @@ function App() {
     fetchImages()
   }, [])
   
-  
+  const handleSubmit = () => {
+    
+  }
+
   return <main>
     <div className="search">
       <form className="search-form">
