@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-
+    const event = window.addEventListener('scroll', () => {})
   }, [])
   
   const handleSubmit = (e) => {
