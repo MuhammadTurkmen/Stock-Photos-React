@@ -39,7 +39,7 @@ function App() {
     }) 
  
     return () =>  window.removeEventListener('scroll', event)
-  }, [])
+  }, []) 
   
   const handleSubmit = (e) => {
     e.preventDefault()
