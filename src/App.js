@@ -31,8 +31,8 @@ function App() {
     fetchImages()
   }, [])
   
-  const handleSubmit = () => {
-    
+  const handleSubmit = (e) => {
+    e.preventDefault()
   }
 
   return <main>
