@@ -6,6 +6,10 @@ const mainUrl = `https://api.unsplash.com/photos/`
 const searchUrl = `https://api.unsplash.com/search/photos/`
 
 function App() {
+  const fetchImages = async () => {
+
+  }
+  
   return <h2>stock photos starter</h2>
 }
 
