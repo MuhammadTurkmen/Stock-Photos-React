@@ -32,7 +32,11 @@ function App() {
   }, [])
   
   
-  return <main>stock photos starter</main>
+  return <main>
+    <div className="search">
+      
+    </div>
+  </main>
 }
 
 export default App
