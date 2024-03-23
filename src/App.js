@@ -13,7 +13,7 @@ function App() {
     setLoading(true)
     let url;
     url = `${mainUrl}?
-    clientID=46CvFkwGy7FL3zJh4ua9XROfFxdCGATsGUcrXtg8YJw`
+    client_id=46CvFkwGy7FL3zJh4ua9XROfFxdCGATsGUcrXtg8YJw`
     try {
       const response = await fetch(url)
       const data = await response.json()
