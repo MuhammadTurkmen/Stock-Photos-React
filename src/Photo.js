@@ -4,7 +4,7 @@ const Photo = ({urls:{regular}, alt_description, likes, user:{name, portfolio_ur
   return <article className='photo'>
     <img src={regular} alt={alt_description} />
     <div className="photo-info">
-
+      <h4>{name}</h4>
     </div>
   </article>
 }
