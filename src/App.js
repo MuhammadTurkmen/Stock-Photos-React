@@ -7,7 +7,11 @@ const searchUrl = `https://api.unsplash.com/search/photos/`
 
 function App() {
   const fetchImages = async () => {
-
+    try {
+      const response = await fetch(url)
+    } catch (error) {
+      
+    }
   }
   
   return <h2>stock photos starter</h2>
