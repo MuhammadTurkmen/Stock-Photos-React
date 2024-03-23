@@ -19,7 +19,7 @@ function App() {
     try {
       const response = await fetch(url)
       const data = await response.json()
-      console.log(data);
+      setPhotos(data)
     } catch (error) {
       setLoading(false) 
       console.log(error);
