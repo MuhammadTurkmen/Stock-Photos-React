@@ -47,7 +47,9 @@ function App() {
     </section>
     <section className='photos'>
       <div className="photos-center">
-        {}
+        {photos.map(() => {
+          return <Photo />
+        })}
       </div>
     </section>
   </main>
