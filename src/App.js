@@ -45,6 +45,9 @@ function App() {
         </button>
       </form>
     </section>
+    <section className='photos'>
+      
+    </section>
   </main>
 }
 
