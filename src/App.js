@@ -34,7 +34,7 @@ function App() {
   
   return <main>
     <div className="search">
-      
+      <form className="search-form"></form>
     </div>
   </main>
 }
