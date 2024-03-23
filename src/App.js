@@ -33,6 +33,7 @@ function App() {
   
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log("hello");
   }
 
   return <main>
