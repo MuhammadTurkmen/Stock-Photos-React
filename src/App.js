@@ -21,7 +21,7 @@ function App() {
       const data = await response.json()
       console.log(data);
     } catch (error) {
-      setLoading(false)
+      setLoading(false) 
       console.log(error);
     }
   }
