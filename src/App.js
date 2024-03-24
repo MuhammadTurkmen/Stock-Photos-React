@@ -11,7 +11,7 @@ const searchUrl = `https://api.unsplash.com/search/photos/`
 function App() {
   const [loading, setLoading] = useState(false)
   const [photos, setPhotos] = useState([])
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(1)
   const [query, setQuery] = useState('')
 
 
@@ -47,7 +47,6 @@ function App() {
     fetchImages();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
-
 
   
   const handleSubmit = (e) => {
