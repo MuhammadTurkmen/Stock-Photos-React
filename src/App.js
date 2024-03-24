@@ -14,6 +14,7 @@ function App() {
   const [page, setPage] = useState(1)
   const [query, setQuery] = useState('')
   const mounted = useRef(false)
+  const [newImages, setNewImages] = useState(false)
 
   const fetchImages = async () => {
     setLoading(true);
@@ -68,6 +69,9 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', event)
+
+    return () => window.removeEventListener('scroll', event)
+    
   }, [])
 
   const handleSubmit = (e) => {
