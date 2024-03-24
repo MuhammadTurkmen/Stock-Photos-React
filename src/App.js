@@ -49,7 +49,9 @@ function App() {
   }, [page]);
 
   useEffect(() => {
-
+    if(!mounted.current) {
+      mounted.current = true
+    }
   }, [])
 
   
