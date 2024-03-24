@@ -33,6 +33,7 @@ function App() {
       const response = await fetch(url)
       const data = await response.json()
       setPhotos((oldPhotos) => {
+        if(query && page === 1)
         if(query) {
           return [...oldPhotos, ...data.results]
         }
