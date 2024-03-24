@@ -19,7 +19,7 @@ function App() {
     setLoading(true)
     let url;
     const urlPage = `&page=${page}`
-    
+    const urlQuery = `&query=${query}`
     url = `${mainUrl}${clientID}${urlPage}`
     try {
       const response = await fetch(url)
