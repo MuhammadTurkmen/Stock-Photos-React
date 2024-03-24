@@ -56,7 +56,6 @@ function App() {
       return
     }
     
-    setPage(1)
   }, [newImages])
 
   const event = () => {
