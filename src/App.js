@@ -55,6 +55,7 @@ function App() {
       mounted.current = true
       return
     }
+    if(loading) return
     
   }, [newImages])
 
