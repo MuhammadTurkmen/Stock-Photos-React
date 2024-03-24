@@ -32,9 +32,12 @@ function App() {
     try {
       const response = await fetch(url)
       const data = await response.json()
-      setPhotos((old) => {
-        return [...old, ...data]
+      setPhotos((oldPhotos) => {
+        if(query) {
+          return [...oldPhotos, ...data]
+        }
       })
+      
       setLoading(false)
     } catch (error) {
       setLoading(false) 
@@ -60,7 +63,7 @@ function App() {
   
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("hello");
+    fetchImages()
   }
 
   return <main>
