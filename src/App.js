@@ -53,6 +53,10 @@ function App() {
       mounted.current = true
       return
     }
+    if(page === 1) {
+      fetchImages(1)
+    }
+    setPage(1)
   }, [])
 
   
