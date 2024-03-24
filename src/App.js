@@ -60,7 +60,10 @@ function App() {
     setPage(1)
   }, [])
 
-  
+  useEffect(() => {
+
+  }, [])
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if(!query) return
