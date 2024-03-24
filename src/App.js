@@ -20,6 +20,12 @@ function App() {
     let url;
     const urlPage = `&page=${page}`
     const urlQuery = `&query=${query}`
+
+
+    if(query) {
+      url = `${searchUrl}${clientID}${urlPage}`
+    }
+
     url = `${mainUrl}${clientID}${urlPage}`
     try {
       const response = await fetch(url)
