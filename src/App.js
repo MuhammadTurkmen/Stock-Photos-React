@@ -23,7 +23,7 @@ function App() {
 
 
     if(query) {
-      url = `${searchUrl}${clientID}${urlPage}`
+      url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
     }
 
     url = `${mainUrl}${clientID}${urlPage}`
