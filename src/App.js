@@ -41,7 +41,7 @@ function App() {
       setNewImages(false)
       setLoading(false);
     } catch (error) {
-
+      setNewImages(false)
       setLoading(false);
     }
   };
