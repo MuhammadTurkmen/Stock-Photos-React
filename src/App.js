@@ -69,7 +69,6 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setPage(1)
-    fetchImages()
   }
 
   return <main>
