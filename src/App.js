@@ -60,6 +60,10 @@ function App() {
     setPage(1)
   }, [])
 
+  const event = () => {
+    
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', event)
   }, [])
