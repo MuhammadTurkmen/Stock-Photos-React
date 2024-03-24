@@ -51,12 +51,14 @@ function App() {
   useEffect(() => {
     if(!mounted.current) {
       mounted.current = true
+      return
     }
   }, [])
 
   
   const handleSubmit = (e) => {
     e.preventDefault()
+    if(!query) return
     setPage(1)
   }
 
