@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import Photo from './Photo'
 // const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`
@@ -13,7 +13,7 @@ function App() {
   const [photos, setPhotos] = useState([])
   const [page, setPage] = useState(1)
   const [query, setQuery] = useState('')
-
+  const mounted = useRef(false)
 
   const fetchImages = async () => {
     setLoading(true);
