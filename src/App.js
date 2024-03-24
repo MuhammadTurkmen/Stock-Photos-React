@@ -61,7 +61,9 @@ function App() {
   }, [])
 
   const event = () => {
-    if(window.innerheight + window.scrollY >= document.body.scrollHeight - 2)
+    if(window.innerheight + window.scrollY >= document.body.scrollHeight - 2) {
+      setNewImages(true)
+    }
   }
 
   useEffect(() => {
