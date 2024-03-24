@@ -21,7 +21,9 @@ function App() {
     try {
       const response = await fetch(url)
       const data = await response.json()
-      setPhotos(data)
+      setPhotos((oldPhotos) => {
+        
+      })
       setLoading(false)
     } catch (error) {
       setLoading(false) 
@@ -31,12 +33,14 @@ function App() {
 
   useEffect(() => {
     fetchImages()
-  }, [])
+  }, [page])
 
   useEffect(() => { 
     const event = window.addEventListener('scroll', () => { 
       if((loading && window.innerHeight + window.scrollY) >= document.body.scrollHeight - 2) {
-        console.log('it work');
+        setPage((oldPage) => {
+
+        })
       } 
     }) 
   
