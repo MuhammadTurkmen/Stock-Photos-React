@@ -61,7 +61,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-
+    window.addEventListener('scroll', event)
   }, [])
 
   const handleSubmit = (e) => {
