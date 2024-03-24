@@ -54,12 +54,9 @@ function App() {
       mounted.current = true
       return
     }
-    if(page === 1) {
-      fetchImages()
-      return
-    }
+    
     setPage(1)
-  }, [])
+  }, [newImages])
 
   const event = () => {
     if(window.innerheight + window.scrollY >= document.body.scrollHeight - 2) {
