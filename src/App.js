@@ -61,7 +61,7 @@ function App() {
   }, [])
 
   const event = () => {
-    
+    if(window.innerheight + window.scrollY >= document.body.scrollHeight - 2)
   }
 
   useEffect(() => {
