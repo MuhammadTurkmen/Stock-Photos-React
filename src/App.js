@@ -38,6 +38,7 @@ function App() {
           return [...oldPhotos, ...data];
         }
       });
+      setNewImages(false)
       setLoading(false);
     } catch (error) {
 
